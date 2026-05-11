@@ -15,7 +15,7 @@ export const AppLayout = () => {
             <span className="grid size-9 place-items-center rounded-full bg-ink text-paper">
               <Sparkles size={17} />
             </span>
-            <span className="leading-tight">yaoyao check now</span>
+            <span className="leading-tight">爻爻 check now</span>
           </Link>
           <div className="flex items-center gap-1 rounded-full border border-ink/10 bg-white/60 p-1 text-sm">
             {navItems.map((item) => (

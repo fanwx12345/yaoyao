@@ -26,7 +26,7 @@ export const HomePage = () => {
           </div>
           <div>
             <h1 className="max-w-3xl text-5xl font-black leading-[1.02] sm:text-7xl lg:text-8xl">
-              yaoyao check now
+              爻爻 check now
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-ink/68 sm:text-xl">
               15 道互联网精神场景题，算出你的主副五行人格。不是玄学，也不是科学，是一种足够准确的今日精神天气。
