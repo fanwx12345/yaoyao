@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --paper: 248 245 237;
+  --ink: 34 30 25;
+  --fire: 238 95 62;
+  --water: 50 106 168;
+  --wood: 78 143 96;
+  --metal: 171 136 59;
+  --earth: 149 105 70;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(238, 95, 62, 0.13), transparent 32rem),
+    radial-gradient(circle at 84% 4%, rgba(50, 106, 168, 0.13), transparent 28rem),
+    linear-gradient(135deg, rgb(var(--paper)), #f1efe7 44%, #edf1ea);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer utilities {
+  .bg-paper {
+    background-color: rgb(var(--paper));
+  }
+
+  .text-paper {
+    color: rgb(var(--paper));
+  }
+
+  .bg-ink {
+    background-color: rgb(var(--ink));
+  }
+
+  .text-ink {
+    color: rgb(var(--ink));
+  }
+
+  .border-ink {
+    border-color: rgb(var(--ink));
+  }
+
+  .rounded-card {
+    border-radius: 8px;
+  }
+
+  .bg-fire-soft {
+    background-color: rgba(var(--fire), 0.16);
+  }
+
+  .bg-water-soft {
+    background-color: rgba(var(--water), 0.16);
+  }
+
+  .bg-wood-soft {
+    background-color: rgba(var(--wood), 0.16);
+  }
+
+  .bg-metal-soft {
+    background-color: rgba(var(--metal), 0.18);
+  }
+
+  .bg-earth-soft {
+    background-color: rgba(var(--earth), 0.16);
+  }
+
+  .text-fire-ink {
+    color: rgb(158 52 35);
+  }
+
+  .text-water-ink {
+    color: rgb(34 76 128);
+  }
+
+  .text-wood-ink {
+    color: rgb(46 105 67);
+  }
+
+  .text-metal-ink {
+    color: rgb(116 85 28);
+  }
+
+  .text-earth-ink {
+    color: rgb(112 75 49);
+  }
+
+  .border-fire {
+    border-color: rgba(var(--fire), 0.72);
+  }
+
+  .border-water {
+    border-color: rgba(var(--water), 0.72);
+  }
+
+  .border-wood {
+    border-color: rgba(var(--wood), 0.72);
+  }
+
+  .border-metal {
+    border-color: rgba(var(--metal), 0.72);
+  }
+
+  .border-earth {
+    border-color: rgba(var(--earth), 0.72);
+  }
+}
